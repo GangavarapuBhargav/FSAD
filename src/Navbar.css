@@ -1,0 +1,11 @@
+/* Ensure proper alignment and spacing */
+.navbar-nav {
+    display: flex;
+    gap: 15px; /* Add space between the buttons */
+  }
+  
+  .but {
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }

@@ -1,0 +1,70 @@
+.cont {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 40px;
+    border: 1px solid #ddd;
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sign {
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 50px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 0 auto 20px auto;
+}
+
+.inputs {
+    margin-top: 55px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input img {
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+}
+
+.input input {
+    height: 50px;
+    width: calc(100% - 60px);
+    margin-left: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 19px;
+}
+
+.submit {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.but {
+    width: 18%;
+}

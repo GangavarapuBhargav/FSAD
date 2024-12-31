@@ -1,0 +1,70 @@
+.cont {
+    max-width: 550px; /* Adjusted width for better proportions */
+    margin: 40px auto; /* Centers the container horizontally */
+    padding: 20px; /* Slightly increased padding for a boxier feel */
+    border: 1px solid #ddd; /* Optional: Adds a border for a sharp box effect */
+    background-color: #f8f9fa; /* Background color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.sign {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 50px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 0 auto 20px auto;
+}
+
+.inputs {
+    margin-top: 55px;
+    margin-bottom: 20px; /* Added space below inputs */
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Space between inputs */
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better UI */
+}
+
+.input img {
+    width: 24px;
+    height: 24px;
+    margin-left: 15px; /* Padding for icons inside inputs */
+}
+
+.input input {
+    height: 50px;
+    width: calc(100% - 60px); /* Dynamic width to avoid overflow */
+    margin-left: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 19px;
+}
+
+.submit {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+}
+
+.but {
+    width: 18%;
+}
