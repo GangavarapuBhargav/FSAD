@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Navbar'; // Import the Navbar component correctly
 import './Register.css';
 import './App.css'
+import { Link } from 'react-router-dom';
 
 const Register = () => {
   return (
@@ -37,7 +38,7 @@ const Register = () => {
             </div>
             <div className="submit d-flex flex-row justify-content-center">
               <button className="btn btn-outline-primary mx-2 but">Sign Up</button>
-              <button className="btn btn-outline-secondary mx-2 but">Login</button>
+              <Link to='/login'  className="btn btn-outline-secondary mx-2 but">sign In</Link>
              
             </div>
             

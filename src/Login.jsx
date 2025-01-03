@@ -1,6 +1,7 @@
 import React from 'react';
 import './Login.css';
 import Navbar from './Navbar'; 
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
@@ -9,7 +10,7 @@ const Login = () => {
       <div className="container cont text-center shadow">
         <div className="row">
           <div className="col-12">
-            <div className="sign">Login</div>
+            <div className="sign">Sign In</div>
             <div className="underline"></div>
             <div className="inputs">
               <div className="input">
@@ -28,8 +29,8 @@ const Login = () => {
               </div>
             </div>
             <div className="submit d-flex flex-row justify-content-center">
-              <button className="btn btn-outline-primary mx-2 but">Login</button>
-              <button className="btn btn-outline-secondary mx-2 but">Register</button>
+              <button className="btn btn-outline-primary mx-2 but">Sign In</button>
+              <Link to='/register' className="btn btn-outline-secondary mx-2 but">Sign Up</Link>
             </div>
           </div>
         </div>

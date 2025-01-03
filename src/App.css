@@ -53,9 +53,10 @@ body {
 .text2 {
   margin-top: 10px;
   margin-left: 50px;
-  font-weight: bold;
+  font-weight: bolder;
   color: #2d6fb0;
   font-size: 50px;
+  font-style: default;
 }
 
 .text3 {
