@@ -1,70 +1,84 @@
-.cont {
-    max-width: 550px; /* Adjusted width for better proportions */
-    margin: 40px auto; /* Centers the container horizontally */
-    padding: 20px; /* Slightly increased padding for a boxier feel */
-    border: 1px solid #ddd; /* Optional: Adds a border for a sharp box effect */
-    background-color: #f8f9fa; /* Background color */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-}
-
-.sign {
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  .register-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 0.5rem;
     text-align: center;
-    color: black;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.underline {
-    width: 50px;
-    height: 4px;
-    background-color: #007bff;
-    margin: 0 auto 20px auto;
-}
-
-.inputs {
-    margin-top: 55px;
-    margin-bottom: 20px; /* Added space below inputs */
+  }
+  
+  .subtitle {
+    color: #666;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .register-form {
     display: flex;
     flex-direction: column;
-    gap: 25px; /* Space between inputs */
-}
-
-.input {
+    gap: 1rem;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .input-group input:focus {
+    border-color: #007bff;
+  }
+  
+  .terms {
     display: flex;
     align-items: center;
-    margin: auto;
-    width: 480px;
-    height: 80px;
-    background-color: #fff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better UI */
-}
-
-.input img {
-    width: 24px;
-    height: 24px;
-    margin-left: 15px; /* Padding for icons inside inputs */
-}
-
-.input input {
-    height: 50px;
-    width: calc(100% - 60px); /* Dynamic width to avoid overflow */
-    margin-left: 10px;
-    background: transparent;
+    font-size: 0.9rem;
+  }
+  
+  .register-button {
+    background: #007bff;
+    color: white;
+    padding: 0.8rem;
     border: none;
-    outline: none;
-    color: #797979;
-    font-size: 19px;
-}
-
-.submit {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center; 
-    gap: 20px;
-}
-
-.but {
-    width: 18%;
-}
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s;
+  }
+  
+  .register-button:hover {
+    background: #0056b3;
+  }
+  
+  .login-link {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  
+  .login-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .login-link a:hover {
+    text-decoration: underline;
+  }

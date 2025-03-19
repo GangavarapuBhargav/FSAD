@@ -1,51 +1,45 @@
 import React from 'react';
-import Navbar from './Navbar'; // Import the Navbar component correctly
 import './Register.css';
-import './App.css'
 import { Link } from 'react-router-dom';
 
 const Register = () => {
   return (
-    <>
-      
-      <div className="cont container">
-        <div className="row">
-          <div className="col-12">
-            <div className="sign">Sign Up</div>
-            <div className="underline"></div>
-            <div className="inputs">
-              <div className="input">
-                <img
-                  src="https://res.cloudinary.com/dlpitkw7i/image/upload/v1735568388/user_icon_jfc0gw.png"
-                  alt=""
-                />
-                <input type="text" placeholder="Enter your Name" />
-              </div>
-              <div className="input">
-                <img
-                  src="https://res.cloudinary.com/dlpitkw7i/image/upload/v1735568388/mail_m3bcwk.png"
-                  alt=""
-                />
-                <input type="email" placeholder="Enter your email" />
-              </div>
-              <div className="input">
-                <img
-                  src="https://res.cloudinary.com/dlpitkw7i/image/upload/v1735568388/padlock_mondhw.png"
-                  alt=""
-                />
-                <input type="password" placeholder="Enter your password" />
-              </div>
-            </div>
-            <div className="submit d-flex flex-row justify-content-center">
-              <button className="btn btn-outline-primary mx-2 but">Sign Up</button>
-              <Link to='/login'  className="btn btn-outline-secondary mx-2 but">sign In</Link>
-             
-            </div>
-            
+    <div className="register-container">
+      <div className="register-box">
+        <h2>Create Account</h2>
+        <p className="subtitle">Join us by filling in your details</p>
+        
+        <form className="register-form">
+          <div className="input-group">
+            <input type="text" placeholder="Full Name" required />
           </div>
-        </div>
+
+          <div className="input-group">
+            <input type="email" placeholder="Email" required />
+          </div>
+          
+          <div className="input-group">
+            <input type="password" placeholder="Password" required />
+          </div>
+          
+          <div className="input-group">
+            <input type="password" placeholder="Confirm Password" required />
+          </div>
+          
+          <div className="terms">
+            <label>
+              <input type="checkbox" required /> I agree to the terms and conditions
+            </label>
+          </div>
+          
+          <button type="submit" className="register-button">Sign Up</button>
+          
+          <p className="login-link">
+            Already have an account? <Link to="/login">Sign in</Link>
+          </p>
+        </form>
       </div>
-    </>
+    </div>
   );
 };
 
